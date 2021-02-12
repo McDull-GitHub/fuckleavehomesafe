@@ -2,20 +2,29 @@
 透過改修APK，移除網絡使用權限。隻APP再無可能傳送任資料去政府嘅伺服器，達至100%安心。
 
 
-<img src="2.jpg" alt=""  width="100%" />
 
-<img src="1.jpg" alt=""  width="300" />
 
 ## 下載
+<a href="LeaveHomeSafe_1.1.4_%E5%AE%89%E5%BF%83%E7%89%882.apk">LeaveHomeSafe_1.1.4_安心版2.apk</a>
 
+首次使用可能會卡住喺 "載入中"，Kill咗個APP，再開即可。
 
 
 ## 原理
 
 ## 如果驗証APK 真係無網絡權限?
 
-* https://www.sisik.eu/apk-tool
-* 安裝後，可用此CMD查看:
-  ```
-  adb shell dumpsys package hk.gov.ogcio.leavehomesafe
-  ```
+可使用 https://www.sisik.eu/apk-tool 查看權限:
+
+如下圖：
+<img src="2.jpg" alt=""  width="100%" />
+
+另外，應用程式資訊亦會顯示: 未使用任何數據：
+
+<img src="1.jpg" alt=""  width="300" />
+
+
+安裝後，可用 ADB 查看權限:
+```
+adb shell dumpsys package hk.gov.ogcio.leavehomesafe
+```
