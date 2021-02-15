@@ -14,7 +14,7 @@
 1. 利用 APKStudio 修改原版APK，將 AndroidManifest.xml 裡嘅  <uses-permission android:name="android.permission.INTERNET"/> 移除。
 1. 另外由於無網絡權限會彈APP，所以亦要廢除 okhttp 程式庫。 
 
-## 如何驗証APK 真係無網絡權限?
+## 如何驗証 APK 真係無網絡權限?
 
 可使用 https://www.sisik.eu/apk-tool 查看權限:
 
@@ -30,3 +30,6 @@
 ```
 adb shell dumpsys package hk.gov.ogcio.leavehomesafe
 ```
+
+## 呢隻 APP 真係安全?
+一般嚟講，唔建議用家安裝不明來歷嘅 APK，因為可能俾不法之徒加料。但如上所說，此 APK 已無網絡權限，都做唔到咩花樣，唔會偷到嘢。
