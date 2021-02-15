@@ -31,4 +31,4 @@
 
 
 ## 你呃人，無 Source Code 嘅?
-其實我都無Java Source Code，如要睇 Smali Source Code，只要用 apkstudio 打開就睇到晒。
+其實我都無Java Source Code，如要睇 Smali Source Code，只要用 apkstudio 打開 apk 就睇到晒。
