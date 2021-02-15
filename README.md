@@ -52,7 +52,7 @@ MD5: 084d3b38a141fe252933a0b37f3aff9b
     ```
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     ```
-1. 打開 \smali\okhttp3\Dns$1.smali，搵 .method public lookup ，喺 Line 42 (.end annotation) 行加以下嘅 code
+1. 打開 \smali\okhttp3\Dns$1.smali，搵 .method public lookup ，喺 Line 42 (.end annotation) 下一行開始，加以下嘅 code
 
     ```
     new-instance p1, Ljava/net/UnknownHostException;
