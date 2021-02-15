@@ -28,3 +28,7 @@
 
 ## 呢隻 APP 真係安全?
 一般嚟講，唔建議用家安裝不明來歷嘅 APK，因為可能俾不法之徒加料。但如上所說，此 APK 已無網絡權限，都做唔到咩花樣，唔會偷到嘢。
+
+
+## 你呃人，無 Source Code 嘅?
+其實我都無Java Source Code，如要睇 Smali Source Code，只要用 apkstudio 打開就睇到晒。
