@@ -5,7 +5,7 @@
 
 
 ## 下載
-<a href="https://raw.githubusercontent.com/Plarigne/leavehomesafe-android-block-network/main/LeaveHomeSafe_1.1.4_%E5%AE%89%E5%BF%83%E7%89%882.apk">LeaveHomeSafe_1.1.4_安心版2.apk</a>
+<a href="https://raw.githubusercontent.com/Plarigne/leavehomesafe-android-block-network/main/LeaveHomeSafe_1.1.4_%E5%AE%89%E5%BF%83%E7%89%882.apk">LeaveHomeSafe_1.1.4_安心版3.apk</a>
 
 首次使用可能會卡住喺 "載入中"，Kill咗個APP，再開即可。
 
