@@ -26,10 +26,5 @@
 <img src="1.jpg" alt=""  width="300" />
 
 
-安裝後，可用 ADB 查看權限:
-```
-adb shell dumpsys package hk.gov.ogcio.leavehomesafe
-```
-
 ## 呢隻 APP 真係安全?
 一般嚟講，唔建議用家安裝不明來歷嘅 APK，因為可能俾不法之徒加料。但如上所說，此 APK 已無網絡權限，都做唔到咩花樣，唔會偷到嘢。
