@@ -36,3 +36,43 @@ MD5: 084d3b38a141fe252933a0b37f3aff9b
 
 ## 你呃人，無 Source Code 嘅?
 其實我都無Java Source Code，如要睇 Smali Source Code，只要用 apkstudio 打開 apk 就睇到晒。
+
+
+
+## 我都係信唔過你個APK，有冇得自己整?
+可以，不過可能要有少少心機先整到。
+
+1. 下載 apkstudio (https://vaibhavpandey.com/apkstudio/)
+1. 下載原版安心出行APK (https://apkpure.com/tw/leavehomesafe/hk.gov.ogcio.leavehomesafe)
+1. 用 apkstudio 載入 apk
+1. 打開 AndroidManifest.xml，然後移除以下兩行
+    ```
+    <uses-permission android:name="android.permission.INTERNET"/>
+    ```
+    ```
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    ```
+1. 打開 \smali\okhttp3\Dns$1.smali，搵 .method public lookup ，喺 Line 42 (.end annotation) 行加以下嘅 code
+
+    ```
+    new-instance p1, Ljava/net/UnknownHostException;
+
+    const-string v0, "hostname == null"
+
+    invoke-direct {p1, v0}, Ljava/net/UnknownHostException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+    ```
+1. 打開 \smali\com\google\firebase\installations\e.smali ， 移除呢3句
+    ```
+    iget-object v0, p0, Lcom/google/firebase/installations/e;->c:Lcom/google/firebase/installations/f;
+
+    iget-boolean v1, p0, Lcom/google/firebase/installations/e;->d:Z
+
+    invoke-static {v0, v1}, Lcom/google/firebase/installations/f;->a(Lcom/google/firebase/installations/f;Z)V
+    ```
+    
+1. 儲存所有檔案後，按Build
+2. Build 完後，準備Sign Key，按 Sign APK
+3. 此時已生成APK，可以安裝測試
+  
