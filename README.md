@@ -10,6 +10,10 @@
 首次使用可能會卡住喺 "載入中"，Kill咗個APP，再開即可。
 
 
+
+MD5: 084d3b38a141fe252933a0b37f3aff9b
+
+
 ## 原理
 1. 利用 APKStudio 修改原版APK，將 AndroidManifest.xml 裡嘅  `<uses-permission android:name="android.permission.INTERNET"/>` 移除。
 1. 另外由於無網絡權限會彈APP，所以亦要廢除 okhttp 程式庫。 
