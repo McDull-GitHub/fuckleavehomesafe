@@ -5,7 +5,7 @@
 
 
 ## 下載
-<a href="https://raw.githubusercontent.com/Plarigne/leavehomesafe-android-block-network/main/LeaveHomeSafe_1.1.4_%E5%AE%89%E5%BF%83%E7%89%883.apk">LeaveHomeSafe_1.1.4_安心版3.apk</a>
+<a href="https://github.com/McDull-GitHub/fuckleavehomesafe/raw/main/LeaveHomeSafe_1.1.4_%E5%AE%89%E5%BF%83%E7%89%883.apk">LeaveHomeSafe_1.1.4_安心版3.apk</a>
 
 首次使用可能會卡住喺 "載入中"，Kill咗個APP，再開即可。
 
@@ -75,4 +75,3 @@ MD5: 084d3b38a141fe252933a0b37f3aff9b
 1. 儲存所有檔案後，按Build
 2. Build 完後，準備Sign Key，按 Sign APK
 3. 此時已生成APK，可以安裝測試
-  
